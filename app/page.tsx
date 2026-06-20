@@ -90,7 +90,7 @@ export default async function Home() {
 
       <nav className="fixed bottom-0 left-0 right-0 z-40 flex h-14 items-center justify-around border-t border-xp-violet-mid bg-xp-violet-dark md:hidden">
         {[
-          { label: "Home", icon: "🏠", href: "#home" },
+          { label: "Home", icon: "🪟", href: "#home" },
           { label: "Capsule", icon: "⏰", href: "#time-capsule" },
           { label: "Notes", icon: "📝", href: "#notes" },
           { label: "Player", icon: "🎵", href: "#player" },

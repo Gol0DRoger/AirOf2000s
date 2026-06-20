@@ -127,7 +127,7 @@ Return ONLY valid JSON:
     const { error: upsertError } = await supabase
       .from("monthly_winners")
       .upsert({
-        month_year,
+        month_year: monthYear, // Fixed: Mapped the database column key securely to your local camelCase variable
         winning_theme,
         sample_quotes,
         announced_at: new Date().toISOString(),

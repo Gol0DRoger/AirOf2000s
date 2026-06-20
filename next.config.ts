@@ -11,7 +11,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   experimental: {
-    allowedDevOrigins: ["192.168.0.4", "localhost:3000"],
   },
 };
 

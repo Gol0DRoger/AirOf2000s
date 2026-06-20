@@ -1,0 +1,11 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "crons": [
+    {
+      "path": "/api/analyze-month",
+      "schedule": "0 18 28-31 * *"
+    }
+  ]
+}

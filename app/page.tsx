@@ -75,11 +75,14 @@ export default async function Home() {
               AIR OF 2000s
             </span>
           </div>
-          <nav className="flex gap-4">
-            <a href="/submit" className="text-xp-violet-light hover:text-white font-pixel text-[8px] hover:underline transition-colors">
-              Submit a Memory →
-            </a>
-          </nav>
+         <nav className="flex gap-4">
+  
+    <a href="/submit"
+    className="xp-button border border-xp-violet-mid bg-[#ece9d8] px-3 py-1 text-[10px] text-xp-violet-dark font-pixel hover:bg-[#dedacb] transition-colors"
+  >
+    Submit a Memory →
+  </a>
+</nav>
           <div className="border border-gray-600 bg-black/50 p-1">
             <span className="font-mono text-[9px] text-gray-500">
               Best viewed in Internet Explorer 6.0 at 800×600
@@ -93,7 +96,7 @@ export default async function Home() {
           { label: "Home", icon: "🪟", href: "#home" },
           { label: "Capsule", icon: "⏰", href: "#time-capsule" },
           { label: "Notes", icon: "📝", href: "#notes" },
-          { label: "Player", icon: "🎵", href: "#player" },
+          { label: "Submit", icon: "📷", href: "/submit" },
         ].map((item) => (
           <a
             key={item.label}

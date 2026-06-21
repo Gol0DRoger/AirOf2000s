@@ -116,19 +116,18 @@ export default function SubmitMemory() {
 
               <div>
                 <label className="font-body text-xs text-xp-text">
-                  Where was this? (optional)
+                  Add some context (optional)
                 </label>
                 <input
                   type="text"
                   value={location}
                   onChange={(e) => setLocation(e.target.value.slice(0, 40))}
-                  maxLength={40}
-                  placeholder="e.g., New Delhi, Mumbai School"
+                  maxLength={100}
                   className="inset-border mt-1 w-full bg-white px-3 py-2 font-body text-xs"
                   disabled={isSubmitting}
                 />
                 <p className="mt-1 font-mono text-[9px] text-xp-muted">
-                  {location.length}/40 characters
+                  {location.length}/100 characters
                 </p>
               </div>
 
